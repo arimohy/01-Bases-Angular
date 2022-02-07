@@ -6,7 +6,17 @@ import { Component, OnInit } from '@angular/core';
   //styleUrls: ['./listado.component.css']
 })
 export class ListadoComponent {
+  heroes:string[]=['Spiderman',"Iroman","Hulk","thort"]
+  heroeBorrado:string=""
 
+  borrarHeroe():void{
 
+    this.heroeBorrado=this.heroes[this.heroes.length-1] || ""
+    this.heroes.splice(this.heroes.length-1,1)
+  }
+
+  fueBorrado():boolean{
+    return this.heroeBorrado!=""
+  }
 
 }
