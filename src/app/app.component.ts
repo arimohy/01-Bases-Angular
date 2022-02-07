@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   titulo:String = 'Contador App 3';
   numero:number=10;
+  base:number=5;
 
 
   acumular(valor:number){
